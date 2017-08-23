@@ -1,0 +1,94 @@
+created: 20170110022059587
+creator: shaneleonard
+modified: 20170305062608837
+modifier: shaneleonard
+tags: $:/tags/Stylesheet
+title: Print Style
+tmap.id: 21ef8493-8e47-4363-867e-5b68a7b56ecd
+type: text/css
+
+@media all {
+	.page-break	{ display: none; }
+}
+
+@media print {
+  html, body {
+    font: 10pt "KaTeX_Main", "Times New Roman", Times, serif;
+  }
+  
+  .tc-tiddler-frame .tc-tiddler-body {
+    font-size: 10pt;
+    line-height: normal;
+  }
+  
+  .tc-titlebar {
+    text-align: center;
+    font-size: 1.73rem !important;
+  }
+  
+  .tc-tags-wrapper,
+  .tc-subtitle {
+    display: none;
+  }
+  
+  .tc-tiddler-body h1 {
+	font-family: "KaTeX_Main";
+    font-size: 1.44rem;
+    font-weight: bold;
+  }
+  
+  .tc-tiddler-body h2 {
+    font-family: "KaTeX_Main"; 
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .tc-tiddler-body h3,
+  .tc-tiddler-body h4,
+  .tc-tiddler-body h5,
+  .tc-tiddler-body h6 {
+    font-family: "KaTeX_Main"; 
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .tc-tiddler-body h1 a,
+  .tc-tiddler-body h2 a,
+  .tc-tiddler-body h3 a,
+  .tc-tiddler-body h4 a,
+  .tc-tiddler-body h5 a,
+  .tc-tiddler-body h6 a {
+    font-weight: bold; 
+  }
+  
+  .tc-tiddler-author {
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+  }
+  
+  a.tc-tiddlylink {
+    color: #333333; 
+  }
+  
+  .katex {
+    font-size: 1rem !important;
+  }
+  
+  .hljs {
+    font-size: 0.8rem !important;
+    line-height: 1.3em;
+  }
+  
+  @page {
+    margin: 1in;
+  }
+  
+  .page-break	{ display: block; page-break-before: always; }
+  
+  .js-plotly-plot { page-break-inside: avoid; width: 80%; }
+  
+  .outline { page-break-inside: avoid; }
+  
+  table { page-break-inside: avoid; }
+}

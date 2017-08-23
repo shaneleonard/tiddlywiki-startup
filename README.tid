@@ -1,0 +1,17 @@
+# This Repo
+
+This repository contains a couple of extras which are designed to make using vanilla Tiddlywiki on Mac a little nicer.
+
+## local.wiki.plist
+
+This file allows you to automatically run a `launchd` daemon on startup, so that 
+whenever you login to your Mac, the Tiddlywiki server is started correctly behind 
+the scenes.
+
+Simply change "/path/to/your/wiki" to the correct path to your wiki, and place 
+local.wiki.plist in your `~/Library/LaunchAgents` folder.
+
+## Print Styles
+
+Print_Styles.css.tid is a Tiddler which provides some nice styling for printing 
+your wiki pages or saving them as PDF.

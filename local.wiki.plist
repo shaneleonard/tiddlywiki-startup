@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Label</key>
+		<string>local.wiki</string>
+
+        <key>WorkingDirectory</key>
+        <string>/path/to/your/wiki</string>
+
+		<key>ProgramArguments</key>
+        <array>
+            <string>/usr/local/bin/tiddlywiki</string>
+            <string>--server</string>
+        </array>
+
+		<key>KeepAlive</key>
+        <true/>
+
+        <key>StandardOutPath</key>
+        <string>/path/to/your/wiki/server.log</string>
+        <key>StandardErrorPath</key>
+        <string>/path/to/your/wiki/server.log</string>
+
+        <key>EnvironmentVariables</key>
+        <dict>
+            <key>PATH</key>
+            <string>/bin:/usr/bin:/usr/local/bin</string>
+        </dict>
+	</dict>
+</plist>
